@@ -1,0 +1,31 @@
+<!-- <ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Capacitor Google Auth App
+    </ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <div *ngIf="!flag_login">
+    <img src="https://static1.anpoimages.com/wordpress/wp-content/uploads/2015/10/nexus2cee_Search-Thumb-150x150.png?w=150">
+    <ion-button color="primary" size="large" expand="block" (click)="signIn()">
+      <ion-icon name="logo-google" slot="start"></ion-icon>
+      .Sign in with Google.
+    </ion-button>
+  </div>
+  <div *ngIf="flag_login">
+    <h1>Welcome!</h1>
+    <img class="mx-auto" src={{img_url}} width={75} referrerpolicy="no-referrer" alt="profile" />
+    <div class="mx-left">
+      <input type = "text" value = {{user_email}} style=" width: -webkit-fill-available; border: none;background-color: white;text-align: center;border: none;background-color: white;" disabled/>
+    </div>
+    
+    <ion-button color="danger" size="large" expand="block" (click)="signOut()">
+      <ion-icon name="logo-google" slot="start"></ion-icon>
+      Sign Out
+    </ion-button>
+  </div>
+  </div>
+</ion-content>

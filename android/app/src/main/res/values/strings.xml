@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">demo-ionic-angular</string>
+    <string name="title_activity_main">demo-ionic-angular</string>
+    <string name="package_name">com.ionic.googleauthentication</string>
+    <string name="custom_url_scheme">com.ionic.googleauthentication</string>
+</resources>

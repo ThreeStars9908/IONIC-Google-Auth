@@ -1,0 +1,10 @@
+<ion-content [fullscreen]="true">
+    <div id="container">
+    <img class="mx-auto" src={data.auth.user.picture} width={36} referrerpolicy="no-referrer" alt="profile" />
+      <ion-button color="danger" size="large" expand="block" (click)="signOut()">
+        <ion-icon name="logo-google" slot="start"></ion-icon>
+        Sign Out with Google
+      </ion-button>
+    </div>
+</ion-content>
+  
